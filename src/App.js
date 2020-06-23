@@ -3,7 +3,6 @@ import React from "react";
 import Registrasi from "./pages/registrasi";
 import Login from "./pages/login";
 import LupaPassword from "./pages/lupa-password";
-import Landing from "./pages/landing";
 import NotFound from "./pages/404";
 import Private from "./pages/private";
 import PrivateRoute from "./components/PrivateRoute";
@@ -20,8 +19,7 @@ export default function App() {
       <FirebaseProvider>
         <Router>
           <Switch>
-            <Route path="/" exact component={Landing} />
-            <Route path="/registrasi" component={Registrasi} />
+            <Route path="/" component={Registrasi} />
             <Route path="/home" component={Home} />
             <Route path="/login" component={Login} />
             <Route path="/lupa-password" component={LupaPassword} />
